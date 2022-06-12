@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./img/bafckground.jpg);
+    background-repeat: no-repeat;
+    background-position: inherit;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-family: cursive;
+    font-size: 45px;
+    text-shadow: 5px 5px greenyellow;
+    text-align: center;
+}
+
+.login-box {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.login-box img {
+    min-height: 10vh;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: orange;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    border-radius: 7%;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.dove-logo {
+    height: 3rem;
+}
+
+.flower-photo img {
+    height: 5rem;
+    margin: 0;
+}
+
+.mesa-de-aventuras-login {
+    background-color: darkgreen;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.logout {
+    color: darkred;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(212, 212, 212);
+}
+
+.link-red {
+    color: darkred;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+}
